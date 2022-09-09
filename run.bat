@@ -1,0 +1,1 @@
+﻿dotnet user-secrets set SeedUserPW Passw0rd!

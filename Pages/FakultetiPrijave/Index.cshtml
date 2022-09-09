@@ -1,0 +1,47 @@
+﻿@page
+@model FaksPrijave.Pages.FakultetiPrijave.IndexModel
+
+@{
+    ViewData["Title"] = "Fakulteti";
+}
+
+<h1>Index</h1>
+
+<p>
+    @*Admin Only!!!*@
+    @if (User.IsInRole(Constants.ContactAdministratorsRole))
+    {
+    <a asp-page="CreateFakultet">Dodaj Fakultet</a>
+    }
+</p>
+    <thead>
+        <tr>
+            @*Ovo bi mogo kasnije malo uljepšat!*@
+            <th>
+                @Html.DisplayNameFor(model => model.Fakultet[0].FakultetIme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fakultet[0].SlobodnoMjesta)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Fakultet)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FakultetIme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SlobodnoMjesta)
+                </td>
+                <td>
+
+                    <a asp-page="./Prijava" asp-route-id="@item.FakultetId">Prijava</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

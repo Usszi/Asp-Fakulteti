@@ -1,0 +1,48 @@
+﻿@page "{id:int}"
+@model FaksPrijave.Pages.FakultetiPrijave.PrijavaEditModel
+
+@{
+    ViewData["Title"] = "Ažuriraj";
+}
+
+<h1>Ažuriraj</h1>
+
+<h4>Prijava</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Prijava.PrijavaId" />
+            <input type="hidden" asp-for="Prijava.FakultetId" />
+            <div class="form-group">
+                <label asp-for="Prijava.BodoviSrednja" class="control-label"></label>
+                <input asp-for="Prijava.BodoviSrednja" class="form-control" />
+                <span asp-validation-for="Prijava.BodoviSrednja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prijava.BodoviPrijemni" class="control-label"></label>
+                <input asp-for="Prijava.BodoviPrijemni" class="form-control" />
+                <span asp-validation-for="Prijava.BodoviPrijemni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prijava.BodoviNatjecanja" class="control-label"></label>
+                <input asp-for="Prijava.BodoviNatjecanja" class="form-control" />
+                <span asp-validation-for="Prijava.BodoviNatjecanja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ažuriraj" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Nazad na listu fakulteta</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

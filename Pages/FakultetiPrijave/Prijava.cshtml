@@ -1,0 +1,110 @@
+﻿@page "{id:int}"
+@model FaksPrijave.Pages.FakultetiPrijave.PrijavaModel
+@{
+    ViewData["Title"] = "Prijava";
+}
+
+<h1>Index</h1>
+
+<div>
+    <h4>Fakultet</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fakultet.FakultetIme)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fakultet.FakultetIme)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fakultet.SlobodnoMjesta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fakultet.SlobodnoMjesta)
+        </dd>
+    </dl>
+</div>
+
+<p>
+    @if (Model.Prijavljen == true)
+    {
+        <form style="display:inline;" method="post">
+            <input type="hidden" name="id" value="@Model.Prijava.PrijavaId" />
+            <input type="hidden" name="idtype" value="odjava" />
+            <input type="hidden" name="fid" value="@Model.Fakultet.FakultetId" />
+            <button type="submit" class="btn btn-xs btn-danger">Odjava</button>
+        </form>
+    }
+    else if (Model.Prijavljen == false)
+    {
+        <form style="display:inline;" method="post">
+            <input type="hidden" name="id" value="@Model.Fakultet.FakultetId" />
+            <input type="hidden" name="idtype" value="prijava" />
+            <input type="hidden" name="fid" value="@Model.Fakultet.FakultetId" />
+            <button type="submit" class="btn btn-xs btn-success">Prijava</button>
+        </form>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Rang
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrijavaList[0].PrijavaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrijavaList[0].BodoviSrednja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrijavaList[0].BodoviPrijemni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrijavaList[0].BodoviNatjecanja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrijavaList[0].UkupnoBodova)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int rang = 0;
+            var mjesta = Model.Fakultet.SlobodnoMjesta;
+            foreach (var prijava in Model.PrijavaList)
+            {
+                rang += 1;
+                    <tr>
+                        <td>
+                            @Html.Label(rang.ToString()) / @Html.Label(mjesta.ToString())
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => prijava.PrijavaId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => prijava.BodoviSrednja)
+                        </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => prijava.BodoviPrijemni)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => prijava.BodoviNatjecanja)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => prijava.UkupnoBodova)
+                        </td>
+                        <td>
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                   User, prijava,
+                   ContactOperations.Update)).Succeeded)
+                    {
+                                <a asp-page="./PrijavaEdit" asp-route-id="@prijava.PrijavaId">Ažuriraj</a>
+                    }
+                        </td>
+                    </tr>
+        }}
+    </tbody>
+</table>
+
