@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FaksPrijave
 build_property.RootNamespace = FaksPrijave
-build_property.ProjectDir = C:\Users\uszil\Desktop\Asp projekt\Program\usrani-asp-main\
+build_property.ProjectDir = C:\Users\EasyPCasy\source\repos\usrani-asp-main\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\uszil\Desktop\Asp projekt\Program\usrani-asp-main
+build_property.MSBuildProjectDirectory = C:\Users\EasyPCasy\source\repos\usrani-asp-main
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/Error.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/FakultetiPrijave/CreateFakultet.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/FakultetiPrijave/CreateFakultet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFrdWx0ZXRpUHJpamF2ZVxDcmVhdGVGYWt1bHRldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/FakultetiPrijave/Index.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/FakultetiPrijave/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFrdWx0ZXRpUHJpamF2ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/FakultetiPrijave/Prijava.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/FakultetiPrijave/Prijava.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFrdWx0ZXRpUHJpamF2ZVxQcmlqYXZhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/FakultetiPrijave/PrijavaEdit.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/FakultetiPrijave/PrijavaEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFrdWx0ZXRpUHJpamF2ZVxQcmlqYXZhRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/Index.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/O_nama.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/O_nama.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT19uYW1hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/_ViewImports.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/_ViewStart.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/uszil/Desktop/Asp projekt/Program/usrani-asp-main/Pages/Shared/_Layout.cshtml]
+[C:/Users/EasyPCasy/source/repos/usrani-asp-main/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2d6j385qma
